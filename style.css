@@ -16,7 +16,7 @@ body{
     height: 100%;
     overflow: hidden;
 }
-.container{
+.container_e{
     position: relative;
     height: 100%;
     margin: 0;
@@ -49,8 +49,84 @@ body{
 /* lado direito */
 .direita{
     flex: 1;
-    background-color: red;
     height: 100%;
+}
+.container_d{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.container_x{
+    margin: 0.5rem;
+}
+#x{
+    display: block;
+    margin-left: auto;
+    height: 0.9rem;
+}
+#lista{
+    list-style-type: none;
+}
+input[type=text] {
+    margin: 0.3rem;
+    padding-left: 12px;
+    border: 1.75px solid rgb(218, 218, 218);
+    width: 28em;
+    height: 2rem;
+    resize: vertical;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 15px;    
+    box-shadow: 
+    0px 4px 8px 0px rgba(0, 0, 0, 0.158) inset,
+    -5px -7px 10px 10px rgba(255, 255, 255, 0.74) inset;
+}
+h1{
+    margin-top: 0;
+    position: relative;
+    letter-spacing: 0px;
+    font-family: sans-serif;
+}
+p, mark, li{
+    font-family: sans-serif;
+    font-size: 19px;
+}
+mark{
+    background-color: rgb(241, 166, 43);
+    margin-bottom: 0.5rem;
+}
+li{
+    margin-bottom:0.1em;
+}
+#botao{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 35px;
+    width: 11em;
+    height: 2.2em;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: rgb(206, 127, 0);
+    background-color: rgb(255, 157, 0);
+    color: white;
+    box-shadow: 
+    0px 4px 8px 0px rgba(0, 0, 0, 0.158) ,
+    -5px -7px 10px 10px rgba(255, 255, 255, 0.74) ;
+}
+#botao:hover{
+    background-color: rgb(255, 172, 40);
+}
+.center{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: -20px;
+    padding: 0;
+}
+#area{
+    margin-bottom: -4px;
 }
 
 @media screen and (max-width:768px){
@@ -59,13 +135,16 @@ body{
         justify-content: flex-start;
         height: 100vh;
     }
-    .esquerda{
-        height: 30vh;
+    .direita{
+        flex: 1 1 40vh;
     }
     #logo{
-        height: 35%;
+        height: 60%;
     }
     .bg{
-        transform: scale(1.05) translate(0%, -35%)
+        transform: scale(1.05) translate(0%, -60%)
+    }
+    input[type=text]{
+        width: 70vw;
     }
 }
