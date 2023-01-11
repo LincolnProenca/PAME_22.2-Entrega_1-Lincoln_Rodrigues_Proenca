@@ -1,73 +1,73 @@
-body{
+
+body { /* Removendo inicialmente os espaçamentos do corpo do site */
     margin: 0;
     padding: 0;
 }
 
-.linha{
+.linha{  /* Código para realizar a divisão da tela em duas partes */
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
-/* lado esquerdo */
-.esquerda {
+
+/* Lado esquerdo */
+.esquerda { /* Configurando o tamanho do lado esquerdo e removendo o overflow por conta do blur */
     flex: 1;
     height: 100%;
     overflow: hidden;
 }
-.container_e{
-    position: relative;
+.container_e{ /* Configurações gerais do container que contém o logo da fluxo */
     height: 100%;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
 }
-#logo{
+#logo{ /* Configurações de centralização e redimensionamento da logo */
     z-index: 1;
     position: relative;
-    height: 25%;    
+    height: 25%;  /* Como foi utilizado o comando "translate" para a centralização, o tamanho da imagem é relevante para o alinhamento do fundo */  
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-.bg{
+.bg{ /* Criando o background com a imagem fornecida */
     position: relative;
     z-index: -100;
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url("Assets/Escritório.jfif"), rgba(255, 172, 17, 0.466);
+    background: url("Assets/Escritório.jfif"), rgba(255, 172, 17, 0.466); /* Adcionando a imagem juntamente com um overlay de cor sólida para replicar o efeito do case */
     background-blend-mode: multiply;
     background-position: 70% 30%;
     background-size: cover;
-    filter: blur(4px);
-    transform: scale(1.05) translate(0%, -25%);
+    filter: blur(4px); /* Desfocando o fundo */
+    transform: scale(1.05) translate(0%, -25%); /* Aqui o fundo é deslocado do tamanho da imagem para realinha-lo com a tela */
 }
-/* lado direito */
-.direita{
+
+/* Lado direito */
+.direita{ /* Configurando o tamanho do lado direito */
     flex: 1;
     height: 100%;
 }
-.container_d{
+.container_d{ /* Adicionando espaçamento das bordas e alinhando os componentes internos */
     margin: 2rem;
     display: flex;
     flex-direction: column;
 }
-.container_x{
+.container_x{ /* Adicionando uma margem no container do ícone do X */
     margin: 0.5rem;
 }
-#x{
+#x{ /* Alinhando o X e ajustando o tamanho */
     display: block;
     margin-left: auto;
     height: 0.9rem;
 }
-#lista{
+#lista{ /* Removendo os bullets da lista */
     list-style-type: none;
 }
-input[type=text] {
+input[type=text] { /* Realizando configurações estéticas no input do tipo texto */
     margin: 0.3rem;
     padding-left: 12px;
     border: 1.75px solid rgb(218, 218, 218);
@@ -77,28 +77,29 @@ input[type=text] {
     border-radius: 15px;
     font-family: sans-serif;
     font-size: 15px;    
-    box-shadow: 
+    box-shadow:  /* Adicionando sombreamento interno */
     0px 4px 8px 0px rgba(0, 0, 0, 0.158) inset,
     -5px -7px 10px 10px rgba(255, 255, 255, 0.74) inset;
 }
-h1{
+h1{ /* Ajustando o tamanho e posicionamento do título */
+    font-size: 2.5em;
     margin-top: 0;
     position: relative;
     letter-spacing: 0px;
     font-family: sans-serif;
 }
-p, mark, li{
+p, mark, li{ /* Ajustando tananho e fonte dos outros textos */
     font-family: sans-serif;
     font-size: 19px;
 }
-mark{
+mark{ /* Mudabndo a cor da marca e adicionando margem no texto superior */
     background-color: rgb(241, 166, 43);
     margin-bottom: 0.5rem;
 }
-li{
+li{ /* Adicionando margem nas lista */
     margin-bottom:0.1em;
 }
-#botao{
+#botao{ /* Configurações gerais do botão */
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: bold;
@@ -111,40 +112,39 @@ li{
     border-color: rgb(206, 127, 0);
     background-color: rgb(255, 157, 0);
     color: white;
-    box-shadow: 
+    box-shadow: /* Adicionando sombreamento externo leve */
     0px 4px 8px 0px rgba(0, 0, 0, 0.158) ,
     -5px -7px 10px 10px rgba(255, 255, 255, 0.74) ;
 }
-#botao:hover{
+#botao:hover{ /* Adicionando efeito de hover no botão */
     background-color: rgb(255, 172, 40);
 }
-.center{
+.center{ /* Configurando a classe center utilizada para centralizar o botão e os inputs de texto */
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: -20px;
     padding: 0;
 }
-#area{
+#area{ /* Pequeno ajuste de espaçamento entre a Area de interesses e as checkboxes */
     margin-bottom: -4px;
 }
 
-@media screen and (max-width:768px){
-    .linha {
+@media screen and (max-width:768px){ /* Adicionando mudança de layout para telas pequenas */
+    .linha { /* Inicialmente é invertida a disposição do flex, para que a imagem passe a ficar em cima */
         flex-direction: column;
         justify-content: flex-start;
-        height: 100vh;
     }
-    .direita{
+    .direita{ /* Posteriormente, é aumentado o tamanho da área inferior para reduzir o tamanho da imagem */
         flex: 1 1 40vh;
     }
-    #logo{
+    #logo{ /* Aqui é realizado um aumento no tamanho da logo para ficar mais visível */
         height: 60%;
     }
-    .bg{
+    .bg{ /* E, por fim, reajustado o background para o novo tamanho de logo */
         transform: scale(1.05) translate(0%, -60%)
     }
-    input[type=text]{
+    input[type=text]{ /* Pequeno ajuste de tamanho dos inputs de texto para maior responsividade */
         width: 70vw;
     }
 }

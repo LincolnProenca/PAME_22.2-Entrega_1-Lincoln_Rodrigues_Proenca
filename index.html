@@ -4,54 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de conteúdo fluxo</title>
-    <link rel="shortcut icon" href="Assets/Logo Fluxo.webp" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Formulário de conteúdo fluxo</title> <!-- Título do site -->
+    <link rel="shortcut icon" href="Assets/Logo Fluxo.webp" type="image/x-icon" /> <!-- Ícone do site -->
+    <link rel="stylesheet" href="style.css" /> <!-- Linha para referenciar o arquivo externo de código CSS -->
 </head>
 <body>
-    <div class="linha">
-        <div class="esquerda">
+    <div class="linha"> <!-- Criando um div para separar a tela em duas metades -->
+        <div class="esquerda"> <!-- No lado esquerdo, temos a imagem de fundo juntamente com o logo da fluxo -->
             <div class="container_e">
                 <img id="logo" src="Assets/Logo Fluxo.webp">
                 <div class="bg"></div>
             </div>
         </div>
-        <div class="direita">
+        <div class="direita"> <!-- No lado direito, teremos toda a parte de conteúdo escrito e o ícone do x -->
             <div class="container_x"><img id="x" src="Assets/Ícone X.svg"></div>
             
-            <div class="container_d">
+            <div class="container_d"> <!-- Container para realizar o espaçamento com as bordas -->
                 
                 <h1>Não vá embora agora!</h1>
                 <mark>
                     O processo seletivo tem sido muito divertido e uma ótima oportunidade para adquirir novos conhecimentos! Portanto, preencha o formulário e venha fazer parte da empresa júnior número 1 do Brasil!
                 </mark>
-                <div class="center">
+                <div class="center"> <!-- Div criado para centralizar mais facilmente partes específicas do código -->
                     <ul id="lista">
                         <li><input type="text" placeholder="Nome*"></li>
                         <li><input type="text" placeholder="Email*"></li>
                     </ul>
                 </div>
-                <p id="area">Áreas de interesses</p>
-                <ul id="lista">
+                <p id="area">Áreas de interesses</p> 
+                <ul id="lista"> <!-- Lista de checkboxes com suas respectivas informações-->
                     <li><input type="checkbox" name="Arquitetura e contrução"> Arquitetura e contrução</li>
-                    <li><input type="checkbox" name="Arquitetura e contrução"> Empreendedorismo e startups</li>
-                    <li><input type="checkbox" name="Arquitetura e contrução"> Energia e sustentabilidade</li>
-                    <li><input type="checkbox" name="Arquitetura e contrução"> Engenharia química e alimentos</li>
-                    <li><input type="checkbox" name="Arquitetura e contrução"> Engenharia UFRJ</li>
-                    <li><input type="checkbox" name="Arquitetura e contrução"> Gestão empresarial</li>
-                    <li><input type="checkbox" name="Arquitetura e contrução"> Projetos mecânicos</li>
-                    <li><input type="checkbox" name="Arquitetura e contrução"> Tecnologia de informação</li>
+                    <li><input type="checkbox" name="Empreendedorismo e startups"> Empreendedorismo e startups</li>
+                    <li><input type="checkbox" name="Energia e sustentabilidade"> Energia e sustentabilidade</li>
+                    <li><input type="checkbox" name="Engenharia química e alimentos"> Engenharia química e alimentos</li>
+                    <li><input type="checkbox" name="Engenharia UFRJ"> Engenharia UFRJ</li>
+                    <li><input type="checkbox" name="Gestão empresarial"> Gestão empresarial</li>
+                    <li><input type="checkbox" name="Projetos mecânicos"> Projetos mecânicos</li>
+                    <li><input type="checkbox" name="Tecnologia de informação"> Tecnologia de informação</li>
                 </ul>
-                <div class="center">
+                <div class="center"> <!-- Div criado para centralizar mais facilmente partes específicas do código -->
                     <button id="botao">
                         Tenho interesse
                     </button>
                 </div>
-                
             </div>
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="main.js"></script> <!-- Linha para referenciar o arquivo externo de código JS -->
 </body>
 </html>
