@@ -66,7 +66,7 @@ body { /* Removendo inicialmente os espaçamentos do corpo do site */
     list-style-type: none;
     padding-left: 0;
 }
-input[type=text] { /* Realizando configurações estéticas no input do tipo texto */
+input[type=text]{ /* Realizando configurações estéticas no input do tipo texto */
     margin: 0;      
     padding-left: 12px;
     border: 1.75px solid rgb(218, 218, 218);
@@ -92,12 +92,15 @@ p, mark, li{ /* Ajustando tananho e fonte dos outros textos */
     font-family: sans-serif;
     font-size: 19px;
 }
-mark{ /* Mudabndo a cor da marca e adicionando margem no texto superior */
+.mark{ /* Mudabndo a cor da marca e adicionando margem no texto superior */
     background-color: rgb(241, 166, 43);
     margin-bottom: 0.5rem;
 }
 li{ /* Adicionando margem nas lista */
     margin-bottom:0.5em;
+}
+#area, li {
+    color: rgb(92, 92, 92);
 }
 #botao{ /* Configurações gerais do botão */
     margin-top: 1vh;
