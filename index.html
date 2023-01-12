@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> <!-- Fonte para o h1 e botao -->
     <title>Formulário de conteúdo fluxo</title> <!-- Título do site -->
     <link rel="shortcut icon" href="Assets/Logo Fluxo.webp" type="image/x-icon" /> <!-- Ícone do site -->
     <link rel="stylesheet" href="style.css" /> <!-- Linha para referenciar o arquivo externo de código CSS -->
@@ -25,12 +26,10 @@
                 <mark>
                     O processo seletivo tem sido muito divertido e uma ótima oportunidade para adquirir novos conhecimentos! Portanto, preencha o formulário e venha fazer parte da empresa júnior número 1 do Brasil!
                 </mark>
-                <div class="center"> <!-- Div criado para centralizar mais facilmente partes específicas do código -->
-                    <ul id="lista">
-                        <li><input type="text" placeholder="Nome*"></li>
-                        <li><input type="text" placeholder="Email*"></li>
-                    </ul>
-                </div>
+                <ul id="lista">
+                    <li><input type="text" placeholder="Nome*"></li>
+                    <li><input type="text" placeholder="Email*"></li>
+                </ul>
                 <p id="area">Áreas de interesses</p> 
                 <ul id="lista"> <!-- Lista de checkboxes com suas respectivas informações-->
                     <li><input type="checkbox" name="Arquitetura e contrução"> Arquitetura e contrução</li>
@@ -48,7 +47,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div>   
     </div>
 
     <script src="main.js"></script> <!-- Linha para referenciar o arquivo externo de código JS -->

@@ -9,12 +9,11 @@ body { /* Removendo inicialmente os espaçamentos do corpo do site */
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
 }
 
 /* Lado esquerdo */
 .esquerda { /* Configurando o tamanho do lado esquerdo e removendo o overflow por conta do blur */
-    flex: 1;
+    flex: 1 55%;
     height: 100%;
     overflow: hidden;
 }
@@ -40,16 +39,15 @@ body { /* Removendo inicialmente os espaçamentos do corpo do site */
     padding: 0;
     background: url("Assets/Escritório.jfif"), rgba(255, 172, 17, 0.466); /* Adcionando a imagem juntamente com um overlay de cor sólida para replicar o efeito do case */
     background-blend-mode: multiply;
-    background-position: 70% 30%;
+    background-position: 100%;
     background-size: cover;
     filter: blur(4px); /* Desfocando o fundo */
-    transform: scale(1.05) translate(0%, -25%); /* Aqui o fundo é deslocado do tamanho da imagem para realinha-lo com a tela */
+    transform: scale(1.02) translate(0%, -25%); /* Aqui o fundo é deslocado do tamanho da imagem para realinha-lo com a tela */
 }
 
 /* Lado direito */
 .direita{ /* Configurando o tamanho do lado direito */
     flex: 1;
-    height: 100%;
 }
 .container_d{ /* Adicionando espaçamento das bordas e alinhando os componentes internos */
     margin: 2rem;
@@ -62,16 +60,17 @@ body { /* Removendo inicialmente os espaçamentos do corpo do site */
 #x{ /* Alinhando o X e ajustando o tamanho */
     display: block;
     margin-left: auto;
-    height: 0.9rem;
+    height: 1rem;
 }
 #lista{ /* Removendo os bullets da lista */
     list-style-type: none;
+    padding-left: 0;
 }
 input[type=text] { /* Realizando configurações estéticas no input do tipo texto */
-    margin: 0.3rem;
+    margin: 0;      
     padding-left: 12px;
     border: 1.75px solid rgb(218, 218, 218);
-    width: 28em;
+    width: 22em;
     height: 2rem;
     resize: vertical;
     border-radius: 15px;
@@ -83,10 +82,11 @@ input[type=text] { /* Realizando configurações estéticas no input do tipo tex
 }
 h1{ /* Ajustando o tamanho e posicionamento do título */
     font-size: 2.5em;
-    margin-top: 0;
-    position: relative;
-    letter-spacing: 0px;
-    font-family: sans-serif;
+    margin-bottom: 2px;
+    margin-top: -40px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 p, mark, li{ /* Ajustando tananho e fonte dos outros textos */
     font-family: sans-serif;
@@ -97,19 +97,19 @@ mark{ /* Mudabndo a cor da marca e adicionando margem no texto superior */
     margin-bottom: 0.5rem;
 }
 li{ /* Adicionando margem nas lista */
-    margin-bottom:0.1em;
+    margin-bottom:0.5em;
 }
 #botao{ /* Configurações gerais do botão */
+    margin-top: 1vh;
     text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder ;
     letter-spacing: 0;
     font-size: 35px;
-    width: 11em;
+    width: 9em;
     height: 2.2em;
     border-radius: 0.5rem;
-    border-width: 1px;
-    border-color: rgb(206, 127, 0);
+    border-width: 0;
     background-color: rgb(255, 157, 0);
     color: white;
     box-shadow: /* Adicionando sombreamento externo leve */
@@ -127,6 +127,7 @@ li{ /* Adicionando margem nas lista */
     padding: 0;
 }
 #area{ /* Pequeno ajuste de espaçamento entre a Area de interesses e as checkboxes */
+    margin-top: 0.1vh;
     margin-bottom: -4px;
 }
 
@@ -145,6 +146,6 @@ li{ /* Adicionando margem nas lista */
         transform: scale(1.05) translate(0%, -60%)
     }
     input[type=text]{ /* Pequeno ajuste de tamanho dos inputs de texto para maior responsividade */
-        width: 70vw;
+        width: 95%;
     }
 }
