@@ -92,6 +92,9 @@ p, mark, li{ /* Ajustando tananho e fonte dos outros textos */
     font-family: sans-serif;
     font-size: 19px;
 }
+span{/* Ajustando espaçamento do texto */
+    line-height: 1.6rem;
+}
 .mark{ /* Mudabndo a cor da marca e adicionando margem no texto superior */
     background-color: rgb(241, 166, 43);
     margin-bottom: 0.5rem;
