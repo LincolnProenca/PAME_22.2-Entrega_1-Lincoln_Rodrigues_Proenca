@@ -94,15 +94,18 @@ p, mark, li{ /* Ajustando tananho e fonte dos outros textos */
 }
 span{/* Ajustando espaçamento do texto */
     line-height: 1.6rem;
+    margin-bottom: 0;
 }
 .mark{ /* Mudabndo a cor da marca e adicionando margem no texto superior */
     background-color: rgb(241, 166, 43);
-    margin-bottom: 0.5rem;
 }
-li{ /* Adicionando margem nas lista */
+p{ /* Reduzindo a margem do texto superior */
+    margin-bottom: 0;
+}
+li{ /* Adicionando margem nas listas */
     margin-bottom:0.5em;
 }
-#area, li {
+#area, li { /* Ajustando a cor do texto */
     color: rgb(92, 92, 92);
 }
 #botao{ /* Configurações gerais do botão */
